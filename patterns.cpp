@@ -306,9 +306,17 @@ void print21(int n){
         cout<<endl;
     }
 }
+void print22(int n) {
+    for(int i=1;i<=n;i++){
+        for(char ch='A'+n-1;ch>='A'+n-i;ch--){
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
 int main(){
     int n;
     cin>>n;
-    print21(n);
+    print22(n);//print the pattern you want to print
     return 0;
 }
